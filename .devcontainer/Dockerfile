@@ -19,6 +19,8 @@ RUN groupadd --gid $USER_GID $USERNAME; \
   echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen; \
   locale-gen; \
   update-locale LANG=en_US.UTF-8; \
+  usermod -s /bin/zsh $USERNAME; \
+  usermod -a -G docker $USERNAME; \
   apt-get autoremove -y; \
   apt-get clean -y; \
   rm -rf /var/lib/apt/lists/*
