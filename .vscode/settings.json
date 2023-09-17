@@ -6,5 +6,13 @@
       "extensionId": "ms-dotnettools.csharp",
       "path": "/opt/dotnet/dotnet"
     }
-  ]
+  ],
+  "[csharp]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "dotnet.dotnetPath": "/opt/dotnet",
+  "omnisharp.dotNetCliPaths": [
+    "/opt/dotnet/dotnet"
+  ],
+  "omnisharp.sdkPath": "/opt/dotnet"
 }
